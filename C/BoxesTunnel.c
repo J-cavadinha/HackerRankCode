@@ -28,7 +28,7 @@ int main()
 {
 	int n;
 	scanf("%d", &n);
-	box *boxes = malloc(n * sizeof(Tbox));
+	box *boxes = malloc(n * sizeof(box));
 	for (int i = 0; i < n; i++) {
 		scanf("%d%d%d", &boxes[i].length, &boxes[i].width, &boxes[i].height);
 	}
