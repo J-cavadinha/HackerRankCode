@@ -1,11 +1,22 @@
+// 29/08/2023 - HackerRank C - joaomcavadinha
+// Test case's 7,10 and 12 still pending
+
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
-//Complete the following function.
 
 int find_nth_term(int n, int a, int b, int c, int counter) {
-    // n - numero de steps
+    // n - step number
+    if(n < 4){
+        if(n == 3){
+            return c;
+        }
+        if(n == 2){
+            return b;
+        }
+        if(n == 1){
+            return a;
+        }
+    }
+    
     if(counter == n){
         return a;
     } else {
